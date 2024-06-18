@@ -1,0 +1,184 @@
+.quote-view-visible {
+    display: flex;
+}
+.quote-view-hidden {
+    display: none;
+}
+
+
+/* QUOTE VIEW */
+
+
+* {
+    box-sizing: border-box;
+}
+.quote-view {
+    background-color: rgba(0, 0, 0, 0.636);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;    
+}
+.quote-view-inner {
+    width: 60vw;
+    height: 35vw;
+    background-color: rgb(38, 38, 38);
+    margin: auto;
+    display: flex;
+}
+.quote-view-inner .exit-btn {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 21vw;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border: 0;
+    padding: 0;    
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+.content * {
+    color: white;
+}
+.content-inner {
+    display: flex;
+    height: 100%;
+    width: 90%;     
+    flex-direction: column;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.content-inner > * {
+    margin: auto 0;
+}
+.content-inner > div h3 {    
+    font-size: 1.5vw;
+}
+.content-inner > div h3 {
+    text-decoration: none;
+}
+.content-inner > div:first-of-type div {
+    font-size: 1vw;
+}
+.content-inner > div h3 span {
+    color: orange;
+    font-size: 1.5vw;
+}
+.content-inner > div h5 {
+    font-size: 1vw;
+}
+
+
+.content .social-links {
+    width: 30%;
+    display: flex;    
+    /* border: 1px solid red; */
+    justify-content: space-around;
+}
+.content .social-links img {
+    width: 2.5vw;    
+    transition: 0.2s ease-in-out;    
+}
+.content .social-links img:hover {
+    width: 2vw;
+}
+
+/* Form */
+.form {
+    flex-basis: 50%;
+    flex-grow: 1;    
+    display: flex;     
+}
+.form-inner {    
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;    
+    background-color: white;
+    padding: 2vw;
+}
+.form-inner-inner {
+    /* height: 90%;
+    width: 80%;
+    margin: auto; */
+}
+
+/* first child */
+.form .form-inner .grid {
+    width: 95%;
+    height: 80%;    
+    margin: 0 auto;    
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr 2fr 0.5fr;
+}
+.form .form-inner .grid > * {
+    min-width: 0px;
+    min-height: 0;
+}
+.form .form-inner .grid label {    
+    margin: auto 0;
+    font-size: 1vw;
+}
+.form .form-inner .grid input {
+    height: 75%;
+    border: 1px solid black;
+    border-radius: 0.3vw;    
+}
+.form .form-inner .grid textarea {  
+    /* padding-top: 40%;   */
+    border: 1px solid black;
+    border-radius: 0.3vw;
+    resize: none;
+}
+
+/* second child */
+.form-inner .submit {
+    height: 20%;
+    margin: auto; 
+    flex-grow: 1;
+    width: 95%;
+    display: flex;    
+}
+.form-inner .submit a { 
+    display: flex;
+    width: 60%;   
+    height: 50%;
+    margin: auto;
+    margin-top: 0;
+    text-decoration: none;
+}
+.form-inner .submit a {
+}
+.form-inner .submit a button {    
+    background-color: orange;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;  
+    font-size: 1vw;  
+}
+.form-inner .submit a button:hover {
+    background-color: white;
+    font-weight: 600;
+}   
+
+@media only screen and (max-width: 900px) {
+    .quote-view-inner {
+        width: 95vw;
+        height: 70vw;
+        background-color: rgb(38, 38, 38);
+        margin: auto;
+        display: flex;
+    }    
+    .quote-view-inner .exit-btn {                        
+        right: 4vw;
+        font-size: 2.5vw;
+    }
+}

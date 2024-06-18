@@ -1,0 +1,44 @@
+.cover {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.cover-header-text {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;   
+}
+.cover-header-text h1 {
+  z-index: -100;
+  font-size: 13vw;  
+  /* line-height: 16vh; */
+  /* height: 21vh; */
+  width: auto;
+  color: rgba(233, 229, 229, 0.819);
+  font-weight: 400;
+  margin-bottom: auto;  
+}
+.cover-content-wrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+}
+.cover-content-inner {
+  width: 48vw;
+  display: flex;
+  justify-content: right;
+}
+.cover-content-wrapper > div:last-of-type {
+  width: 52vw;
+  height: 60vh;
+  display: flex;
+}
+.cover-content-wrapper > div:last-of-type > img {
+  width: auto;
+  height: 90%;
+  margin: auto;
+}

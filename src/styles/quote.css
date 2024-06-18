@@ -1,0 +1,67 @@
+
+.quote h1 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.quote a {
+  color: rgb(233, 180, 87);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.quote a:hover {
+  text-decoration: none;
+  color: black;
+}
+.quote-links {    
+  width: 60%;
+  display: flex; 
+  justify-content: space-between;     
+}
+.quote-links button {   
+  padding-top: 1vw;
+  padding-bottom: 1vw;  
+  font-size: 1vw;
+  color: black;
+  border: 0.1vw solid #e9b457;      
+}
+
+.quote-links .link-btn {
+  flex-basis: 45%;    
+}
+
+.quote-links .quote-btn {  
+  width: 45%;  
+}
+.quote-links .quote-btn {  
+  height: 100%;
+}
+
+.quote-links .quote-btn {
+  background-color: white;
+  transition: 0.5s;  
+}
+.quote-links .quote-btn:hover {
+  background-color: #e9b457;
+  border-color: black;
+}
+
+.quote-links .link-btn {
+  background-color: #e9b457;
+  transition: 0.5s;
+}
+.quote-links .link-btn:hover {
+  background-color: white;
+  border-color: black;
+}
+
+@media only screen and (max-width: 690px) {
+  .quote-links {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .quote-links {
+    width: 100%;
+  }
+}

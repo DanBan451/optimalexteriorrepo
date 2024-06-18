@@ -1,0 +1,228 @@
+.services-page {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.services-page .cover-header-side {
+  width: 100%;
+  margin-bottom: 5vw;
+}
+.services-page .cover-header-side h1 {
+  font-size: 55px;
+  font-weight: 600;
+  max-width: 1344px;
+}
+.services-page .cover-header-side > div {
+  /* width: 75%; */
+  max-width: 1344px;
+  padding-left: 3vw;
+  margin: auto;
+}
+.services-page .cover-header-text {
+  width: 75%;
+  margin: auto;
+  justify-content: left;
+  margin-bottom: 3vw;
+}
+.services-page .cover-header-side > div > div {
+  width: 50%;
+}
+.services-page .cover-header-side div div h1 {
+  /* font-size: 3vw;   */
+  font-size: 35px;
+  font-weight: 700;
+}
+.services-page .cover-header-side div div {
+  /* font-size: 1.5vw; */
+  font-size: 16px;
+}
+
+/* service list begins */
+
+.services-page .service-list {
+  /* max-width: 70%; */
+  max-width: 1344px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+  margin-bottom: 10vw;
+  flex-grow: 1;
+  padding-left: 3vw;
+}
+.services-page .service-wrapper {
+  display: flex;
+  height: auto;
+  flex-grow: 1;
+  /* border: 1px solid red; */
+}
+.services-page .service-wrapper > * {
+  width: 50%;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.services-page .service-content-wrapper {
+  height: auto;
+  width: 50%;
+  flex-grow: 1;
+  /* border: 1px solid red; */
+  flex-shrink: 1;
+}
+
+.services-page .service-content {
+  height: auto;
+  width: 100%;
+  flex-grow: 1;
+  flex-grow: 1;
+}
+.services-page .content-title {
+  display: flex;
+}
+.services-page .content-title div {
+  display: flex;
+  margin-left: 3%;
+}
+.services-page .content-title h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  margin: auto;
+}
+.services-page .content-title > img {
+  width: 40px;
+  height: 40px;
+}
+.services-page .content-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 3%;
+}
+.content-content * {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+}
+.content-content p,
+br,
+h5 {
+  margin-bottom: 2.5%;
+}
+.content-content h5 {
+  font-weight: 625;
+}
+
+.services-page .service-image {
+  display: flex;
+}
+.services-page .service-image > img {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 0;
+  margin-top: 5%;
+}
+.services-page .content-content p {
+  text-align: left;
+}
+
+#services-page .quote {
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin-right: 20vw;
+  margin-left: 20vw;
+}
+#services-page .quote > h1 {
+  font-size: 2vw;
+}
+#services-page .quote h1 {
+  margin-bottom: 2vw;
+}
+#services-page .service-content-wrapper .content-content > img {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .services-page .cover-header-side div div h1 {
+    font-size: 4vw;
+  }
+  .services-page .cover-header-side div div {
+    font-size: 2vw;
+  }
+  .services-page .content-title h1 {
+    font-size: 2.5vw;
+  }
+  .content-content * {
+    font-size: 1.5vw;
+  }
+  #services-page .quote {
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+  #services-page .quote h1 {
+    font-size: 3vw;
+  }
+  #services-page .quote-links button {
+    font-size: 2vw;
+  }
+  .services-page .content-title > img {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+@media only screen and (max-width: 690px) {
+  #services-page .quote-links {
+    width: 60%;
+  }
+  #services-page .quote {
+    margin-bottom: 10vw;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #services-page .service-wrapper {
+    display: block;
+  }
+  #services-page .service-content-wrapper {
+    width: 100%;    
+  }
+  #services-page .service-content p {
+    margin-left: 0;
+  }
+  #services-page .service-image {
+    display: none;
+  }
+  #services-page .content-content {
+    display: block;
+  }
+  #services-page .service-content-wrapper .content-content img {            
+    display: block;       
+    width: 40%;
+    height: auto;    
+    margin: 0;    
+    margin-top: 5%;             
+    float: right;     
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+  }  
+  #services-page .service-list {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .services-page .cover-header-side > div {
+    padding-left: 6vw;
+  }
+  #services-page .cover-header-side div div h1 {
+    font-size: 6vw;
+  }
+  #services-page .cover-header-side div div div {
+    display: none;
+  }
+}

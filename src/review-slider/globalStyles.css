@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.scroll-wrapper {
+  background-color: black;
+  margin: auto;
+  height: 75%;
+  width: 75vw;  
+}
+.scroll-container {
+  background-color: blue;  
+  height: auto;  
+}
+.scroll-item {  
+  width: 100vw;  
+}
+.card {
+  background-color: red;
+  height: 100%; 
+    
+  width: 50vw;
+}
+.review {
+  width: 30vw;
+}
